@@ -15,272 +15,293 @@
    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body class="max-w-[1440px] bg-white mx-auto text-black ">
-   <header class="mx-auto max-w-[1172px]">
-      <nav class="p-4">
-         <div class="navbar ">
-            <div class="flex-1">
-              <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
-            </div>
-            <div class="flex-none">
-               <button class="btn text-[#1DD100] bg-[#1DD1001A] border-none">
-                  Bus
-                  <img src="./images/bus-icon.png" alt="">
-                </button>
-            </div>
-          </div>
-      </nav>
-      <div class="banner mx-auto w-[1170px] h-[550px] bg-[url(images/banner.png)]">
-            <div class="flex flex-col items-center justify-center text-white gap-5 pt-16 font-raleway">
-               <h1 class="text-6xl  font-extrabold">Start-to-End Travel with</h1>
-               <h3 class="text-5xl font-extrabold text-[#1DD100]">Khandaker Paribahan</h3>
-               <p class="font-inter">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-
-               <button class="btn text-black border-none bg-[#1DD100]">Buy Tickets</button>
-            </div>
-      </div>
-   </header>
-   <main class="">
-      <section class="offer-sec mt-10 ml-[135px]">
-         <h1 class="text-3xl text-black font-bold text-center font-raleway">Best Offers for you</h1>
-
-         <div class="flex flex-row gap-16 mt-10">
-            <div class="flex flex-row  bg-[#FFBF0F] rounded-3xl ">
-               <div class="text-black m-12 font-inter">
-                  <h1 class="text-4xl font-extrabold">15% OFF</h1>
-                  <p class="text-xl">on your next purchase</p>
-                  <p class="text-[#03071266]">use by January 2024</p>
+   <div id="full-page">
+      <header class="mx-auto max-w-[1172px]">
+         <nav class="p-4">
+            <div class="navbar ">
+               <div class="flex-1">
+                 <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
                </div>
-               <img src="./images/cupon-devider.png" alt="">
-               <div class="m-12 font-raleway">                  
-                  <h1 class="text-3xl font-extrabold">NEW15</h1>
-                  <p class="text-[#03071266]">Cupon Code</p>
+               <div class="flex-none">
+                  <button onclick="buyTicket()" class="btn text-[#1DD100] bg-[#1DD1001A] border-none">
+                     Bus
+                     <img src="./images/bus-icon.png" alt="">
+                   </button>
                </div>
-            </div>
-            
-            <div class="flex flex-row  bg-[#F78C9C] rounded-3xl ">
-               <div class="text-black m-12">
-                  <h1 class="text-4xl font-extrabold">20% OFF</h1>
-                  <p class="text-xl">on your next purchase</p>
-                  <p class="text-[#03071266]">use by January 2024</p>
+             </div>
+         </nav>
+         <div class="banner mx-auto w-[1170px] h-[550px] bg-[url(images/banner.png)]">
+               <div class="flex flex-col items-center justify-center text-white gap-5 pt-16 font-raleway">
+                  <h1 class="text-6xl  font-extrabold">Start-to-End Travel with</h1>
+                  <h3 class="text-5xl font-extrabold text-[#1DD100]">Khandaker Paribahan</h3>
+                  <p class="font-inter">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                  <a href="#paribahan">
+                     <button class="btn text-black border-none bg-[#1DD100]">Buy Tickets</button>
+                  </a>
                </div>
-               <img src="./images/cupon-devider.png" alt="">
-               <div class="m-12 font-raleway">                  
-                  <h1 class="text-3xl font-extrabold">Couple 20</h1>
-                  <p class="text-[#03071266]">Cupon Code</p>
-               </div>
-            </div>         
          </div>
-          <div class="mt-28 -ml-32 text-center">
-            <button class="border border-[#1DD100] text-[#1DD100] p-4 rounded-xl text-center ">See All Offers </button>
-          </div>
-      </section>
-
-      <!-- paribahan sec -->
-
-      <section class="mt-32 bg-[#F7F8F8]">
-         <div class="border-t border-[#1DD100] rounded-full text-center">
-            <h1 class="text-4xl text-black font-bold  pb-4 pt-16 ">Khandaker Paribahan</h1>
-            <p class=" font-inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
-         </div>
-
-         <div class="flex justify-around mt-12 bg-[#FFF] p-12 max-w-[1170px] mx-auto rounded-2xl">
-            <div class="">
-               <div class="flex gap-5 ">
-                  <img src="./images/bus-logo.png" alt="">
-                  <div>
-                     <h1 class="text-3xl text-black font-bold">Khandaker paribahan</h1>
-                     <p>Coach-009-WEB ! AC_Business</p>
+      </header>
+      <main class="">
+         <section class="offer-sec mt-10 ml-[135px]">
+            <h1 class="text-3xl text-black font-bold text-center font-raleway">Best Offers for you</h1>
+   
+            <div class="flex flex-row gap-16 mt-10">
+               <div class="flex flex-row  bg-[#FFBF0F] rounded-3xl ">
+                  <div class="text-black m-12 font-inter">
+                     <h1 class="text-4xl font-extrabold">15% OFF</h1>
+                     <p class="text-xl">on your next purchase</p>
+                     <p class="text-[#03071266]">use by January 2024</p>
                   </div>
-                  <button class="btn text-[#1DD100] bg-[#1DD1001A] ml-52 border-none">
-                     <img src="./images/seat-green.png" alt="">
-                     <span id="left-seat">40</span>Seat Left
-                  </button>
-               </div>
-               <div class="bg-[#F7F8F8] w-[808px] h-[258px] rounded-2xl mt-8">
-                  <div class="flex justify-between p-6 border-b-2 border-dotted border-gray-400 m-6">
-                     <h3>Route</h3>
-                     <h2>Dhaka-Sylhet</h2>
-                  </div>
-                  <div class="flex justify-between pl-6 pr-6 border-b-2 border-dotted border-gray-400 m-6 pb-6">
-                     <h3>Departure Time</h3>
-                     <h2>9:00 PM</h2>
-                  </div>
-                  <div class="flex gap-20 ml-10">
-                     <button class="btn  bg-[#0307120D] border-none text-gray-700">Boarding Point- Laxmipur</button>
-                     <button class="btn  bg-[#0307120D] border-none text-gray-700">Dropping Point- Bogura</button>
-                     <button class="btn  bg-[#0307120D] border-none text-gray-700">Est. Time- 11 Hour</button>
+                  <img src="./images/cupon-devider.png" alt="">
+                  <div class="m-12 font-raleway">                  
+                     <h1 class="text-3xl font-extrabold">NEW15</h1>
+                     <p class="text-[#03071266]">Cupon Code</p>
                   </div>
                </div>
+               
+               <div class="flex flex-row  bg-[#F78C9C] rounded-3xl ">
+                  <div class="text-black m-12">
+                     <h1 class="text-4xl font-extrabold">20% OFF</h1>
+                     <p class="text-xl">on your next purchase</p>
+                     <p class="text-[#03071266]">use by January 2024</p>
+                  </div>
+                  <img src="./images/cupon-devider.png" alt="">
+                  <div class="m-12 font-raleway">                  
+                     <h1 class="text-3xl font-extrabold">Couple 20</h1>
+                     <p class="text-[#03071266]">Cupon Code</p>
+                  </div>
+               </div>         
             </div>
-            <div>
-               <img src="./images/info-devider.png" alt="">
+             <div class="mt-28 -ml-32 text-center">
+               <button class="border border-[#1DD100] text-[#1DD100] p-4 rounded-xl text-center ">See All Offers </button>
+             </div>
+         </section>
+   
+         <!-- paribahan sec -->
+   
+         <section id="paribahan" class="mt-32 bg-[#F7F8F8]">
+            <div class="border-t border-[#1DD100] rounded-full text-center">
+               <h1 class="text-4xl text-black font-bold  pb-4 pt-16 ">Khandaker Paribahan</h1>
+               <p class=" font-inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
             </div>
-            <div class="space-y-3 justify-center items-center flex flex-col -ml-16">              
-               <img src="./images/fare.png" alt="">
-               <h1 class="text-3xl">550 Taka</h1>
-               <p>Per Seat</p>
-            </div>
-         </div>        
-      </section>
-
-   <section class="mx-auto max-w-[1170px] mt-16">
-
-      <div class="flex gap-20">
-
-         <div class="w-6/12 ">
-            <div class="border-b-2 border-dotted border-gray-400 pb-4">
-               <h2 class="text-3xl ">Select Your Seat</h2>
-            </div>
-
-            <div class="border-b-2 border-dotted border-gray-400 flex justify-between ">
-               <div class="flex pt-4 pb-4 gap-2">
-                  <img src="./images/seat-gray.png" alt="">
-                  <p>Avaliable</p>
-               </div>               
-               <div class="flex pt-4 pb-4 gap-2">
-                  <img src="./images/seat-green-filled.png" alt="">
-                  <p>Selected</p>
+   
+            <div class="flex justify-around mt-12 bg-[#FFF] p-12 max-w-[1170px] mx-auto rounded-2xl">
+               <div class="">
+                  <div class="flex gap-5 ">
+                     <img src="./images/bus-logo.png" alt="">
+                     <div>
+                        <h1 class="text-3xl text-black font-bold">Khandaker paribahan</h1>
+                        <p>Coach-009-WEB ! AC_Business</p>
+                     </div>
+                     <button class="btn text-[#1DD100] bg-[#1DD1001A] ml-52 border-none">
+                        <img src="./images/seat-green.png" alt="">
+                        <span id="left-seat">40</span>Seat Left
+                     </button>
+                  </div>
+                  <div class="bg-[#F7F8F8] w-[808px] h-[258px] rounded-2xl mt-8">
+                     <div class="flex justify-between p-6 border-b-2 border-dotted border-gray-400 m-6">
+                        <h3>Route</h3>
+                        <h2>Dhaka-Sylhet</h2>
+                     </div>
+                     <div class="flex justify-between pl-6 pr-6 border-b-2 border-dotted border-gray-400 m-6 pb-6">
+                        <h3>Departure Time</h3>
+                        <h2>9:00 PM</h2>
+                     </div>
+                     <div class="flex gap-20 ml-10">
+                        <button class="btn  bg-[#0307120D] border-none text-gray-700">Boarding Point- Laxmipur</button>
+                        <button class="btn  bg-[#0307120D] border-none text-gray-700">Dropping Point- Bogura</button>
+                        <button class="btn  bg-[#0307120D] border-none text-gray-700">Est. Time- 11 Hour</button>
+                     </div>
+                  </div>
                </div>
-            </div>
-            <div class="m-6 flex justify-end  mr-20">
-               <p class="pl-6 pr-6 p-3 bg-[#dbdddd] rounded-xl"><img src="./images/tabler-icon-steering-wheel.png" alt=""></p>
-             
-            </div>
-
-            <!-- Bus Seat Start -->
-            <div class="flex mt-6 gap-8 pl-6">
-               <div class="flex flex-col gap-9 mt-2  ">
-                  <p>A</p>
-                  <p>B</p>
-                  <p>C</p>
-                  <p>D</p>
-                  <p>E</p>
-                  <p>F</p>
-                  <p>G</p>
-                  <p>H</p>
-                  <p>I</p>
-                  <p>J</p>
+               <div>
+                  <img src="./images/info-devider.png" alt="">
                </div>
-               <div class="space-y-3">
-                  <p id="A1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A1</p>
-                  <p id="B1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B1</p>
-                  <p id="C1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C1</p>
-                  <p id="D1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D1</p>
-                  <p id="E1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E1</p>
-                  <p id="F1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F1</p>
-                  <p id="G1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G1</p>
-                  <p id="H1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H1</p>
-                  <p id="I1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I1</p>
-                  <p id="J1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J1</p>
-               </div>               
-               <div class="space-y-3">
-                  <p id="A2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A2</p>
-                  <p id="B2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B2</p>
-                  <p id="C2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C2</p>
-                  <p id="D2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D2</p>
-                  <p id="E2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E2</p>
-                  <p id="F2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F2</p>
-                  <p id="G2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G2</p>
-                  <p id="H2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H2</p>
-                  <p id="I2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I2</p>
-                  <p id="J2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J2</p>
-               </div> 
-
-               <div class="flex gap-10">
-                  <div class="space-y-3 pl-14">
-                     <p id="A3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A3</p>
-                     <p id="B3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B3</p>
-                     <p id="C3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C3</p>
-                     <p id="D3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D3</p>
-                     <p id="E3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E3</p>
-                     <p id="F3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F3</p>
-                     <p id="G3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G3</p>
-                     <p id="H3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H3</p>
-                     <p id="I3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I3</p>
-                     <p id="J3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J3</p>
+               <div class="space-y-3 justify-center items-center flex flex-col -ml-16">              
+                  <img src="./images/fare.png" alt="">
+                  <h1 class="text-3xl">550 Taka</h1>
+                  <p>Per Seat</p>
+               </div>
+            </div>        
+         </section>
+   
+      <section class="mx-auto max-w-[1170px] mt-16">
+   
+         <div class="flex gap-20">
+   
+            <div class="w-6/12 ">
+               <div class="border-b-2 border-dotted border-gray-400 pb-4">
+                  <h2 class="text-3xl ">Select Your Seat</h2>
+               </div>
+   
+               <div class="border-b-2 border-dotted border-gray-400 flex justify-between ">
+                  <div class="flex pt-4 pb-4 gap-2">
+                     <img src="./images/seat-gray.png" alt="">
+                     <p>Avaliable</p>
+                  </div>               
+                  <div class="flex pt-4 pb-4 gap-2">
+                     <img src="./images/seat-green-filled.png" alt="">
+                     <p>Selected</p>
+                  </div>
+               </div>
+               <div class="m-6 flex justify-end  mr-20">
+                  <p class="pl-6 pr-6 p-3 bg-[#dbdddd] rounded-xl"><img src="./images/tabler-icon-steering-wheel.png" alt=""></p>
+                
+               </div>
+   
+               <!-- Bus Seat Start -->
+               <div class="flex mt-6 gap-8 pl-6">
+                  <div class="flex flex-col gap-9 mt-2  ">
+                     <p>A</p>
+                     <p>B</p>
+                     <p>C</p>
+                     <p>D</p>
+                     <p>E</p>
+                     <p>F</p>
+                     <p>G</p>
+                     <p>H</p>
+                     <p>I</p>
+                     <p>J</p>
+                  </div>
+                  <div class="space-y-3">
+                     <p id="A1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A1</p>
+                     <p id="B1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B1</p>
+                     <p id="C1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C1</p>
+                     <p id="D1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D1</p>
+                     <p id="E1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E1</p>
+                     <p id="F1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F1</p>
+                     <p id="G1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G1</p>
+                     <p id="H1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H1</p>
+                     <p id="I1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I1</p>
+                     <p id="J1" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J1</p>
                   </div>               
                   <div class="space-y-3">
-                     <p id="A4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A4</p>
-                     <p id="B4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B4</p>
-                     <p id="C4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C4</p>
-                     <p id="D4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D4</p>
-                     <p id="E4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E4</p>
-                     <p id="F4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F4</p>
-                     <p id="G4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G4</p>
-                     <p id="H4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H4</p>
-                     <p id="I4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I4</p>
-                     <p id="J4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J4</p>
+                     <p id="A2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A2</p>
+                     <p id="B2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B2</p>
+                     <p id="C2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C2</p>
+                     <p id="D2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D2</p>
+                     <p id="E2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E2</p>
+                     <p id="F2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F2</p>
+                     <p id="G2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G2</p>
+                     <p id="H2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H2</p>
+                     <p id="I2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I2</p>
+                     <p id="J2" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J2</p>
                   </div> 
+   
+                  <div class="flex gap-10">
+                     <div class="space-y-3 pl-14">
+                        <p id="A3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A3</p>
+                        <p id="B3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B3</p>
+                        <p id="C3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C3</p>
+                        <p id="D3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D3</p>
+                        <p id="E3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E3</p>
+                        <p id="F3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F3</p>
+                        <p id="G3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G3</p>
+                        <p id="H3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H3</p>
+                        <p id="I3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I3</p>
+                        <p id="J3" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J3</p>
+                     </div>               
+                     <div class="space-y-3">
+                        <p id="A4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A4</p>
+                        <p id="B4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B4</p>
+                        <p id="C4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C4</p>
+                        <p id="D4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D4</p>
+                        <p id="E4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E4</p>
+                        <p id="F4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F4</p>
+                        <p id="G4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G4</p>
+                        <p id="H4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H4</p>
+                        <p id="I4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I4</p>
+                        <p id="J4" class="all-seat cursor-pointer p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J4</p>
+                     </div> 
+                  </div>
                </div>
-            </div>
-         </div>     
-         <div>
-            <div class="border-b-2 border-dotted border-gray-400 pb-4">
-               <h2 class="text-3xl ">Select Your Seat</h2>
-            </div>
-            <div class="bg-[#F7F8F8] w-[433px]  mt-4 rounded-xl p-6">
-               <div class=" grid grid-cols-3 border-b-2 border-dotted border-gray-400 p-4 pb-4">
-                  <p>Seat <span id="seat-count" class=" bg-[#1DD100] rounded-2xl pl-2 pr-2">0</span></p>
-                  <p>Class</p>
-                  <p>Price</p>
+            </div>     
+            <div>
+               <div class="border-b-2 border-dotted border-gray-400 pb-4">
+                  <h2 class="text-3xl ">Select Your Seat</h2>
                </div>
-               <div id="selected-seat-details" class=" grid grid-cols-3 border-b border-gray-400 pb-4 p-5">
+               <div class="bg-[#F7F8F8] w-[433px]  mt-4 rounded-xl p-6">
+                  <div class=" grid grid-cols-3 border-b-2 border-dotted border-gray-400 p-4 pb-4">
+                     <p>Seat <span id="seat-count" class=" bg-[#1DD100] rounded-2xl pl-2 pr-2">0</span></p>
+                     <p>Class</p>
+                     <p>Price</p>
+                  </div>
+                  <div id="selected-seat-details" class=" grid grid-cols-3 border-b border-gray-400 pb-4 p-5">
+   
+                  </div>
+                  <div class=" grid grid-cols-2 gap-32 pt-2">
+                     <h3>Total Price</h3>
+                     <p>BDT <span id="total-price">0</span></p>
+                  </div>
 
-               </div>
-               <div class="flex justify-between pt-2">
-                  <h3>Total Price</h3>
-                  <p>BDT <span id="total-price">0</span></p>
-               </div>
-               <input type="text" placeholder="Have any cuppon" class=" text-black bg-[#FFF] p-3 rounded-xl mt-2"/>
-               <button class="bg-[#1DD100] text-white btn p-3 border-none rounded-xl">Apply</button>
-               <div class="flex justify-between pt-3">
-                  <h3>Grand Total</h3>
-                  <p>BDT <span id="grand-total">0</span></p>
-               </div>
-            </div>
+                  <input id="coupon-input" type="text" placeholder="Have any coupon" class="input input-bordered bg-gray-200 input-primary  max-w-xs"/>
+                  <button id="button-apply" class=" text-black border-none btn btn-outline bg-[#1DD100] mt-4">Apply</button>
 
-            <div class="space-y-3 pt-4">
-               <p>Passenger Name*</p>
-               <input type="text" placeholder="Enter Your Name" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
-               <p>Phone Number*</p>
-               <input type="number" placeholder="Enter Your phone number" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
-               <p>Email Id</p>
-               <input type="text" placeholder="Enter Your email id" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
-               <button class="bg-[#1DD100] text-white btn border-none rounded-xl w-full ">Next</button>
-               <div class="flex justify-between p-3">
-                  <p class="border-b border-gray-300">Terms and Condition</p>
-                  <p class="border-b border-gray-300">Cancellation Policy</p>
+                  <div class="grid grid-cols-2 gap-32 pt-3">
+                     <h3>Grand Total</h3>
+                     <p>BDT <span id="grand-total">0</span></p>
+                  </div>
                </div>
+   
+               <div class="space-y-3 pt-4">
+                  <p>Passenger Name*</p>
+                  <input type="text" placeholder="Enter Your Name" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
+                  <p>Phone Number*</p>
+                  <input type="number" placeholder="Enter Your phone number" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
+                  <p>Email Id</p>
+                  <input type="text" placeholder="Enter Your email id" class=" text-blacl bg-[#FFF]  p-3 border border-gray-300 rounded-xl mt-2 w-full "/>
+                  <button onclick="submit()" class="bg-[#1DD100] text-white btn border-none rounded-xl w-full ">Next</button>
+                  <div class="flex justify-between p-3">
+                     <p class="border-b border-gray-300">Terms and Condition</p>
+                     <p class="border-b border-gray-300">Cancellation Policy</p>
+                  </div>
+               </div>
+   
             </div>
-
+   
          </div>
-
+      </section>
+      </main>
+      <footer class=" bg-[#030712] text-base-content rounded mt-32 pl-24 pr-24">
+         <div class="flex  border-b-2 border-dotted border-gray-400 justify-between m-16 pt-24 pb-6">
+            <div class="space-y-3">
+               <p class="text-3xl font-bold">E-Ticket</p>
+               <p>E-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div class="space-y-5">
+               <h4 class="text-xl">Download our app</h4>
+               <img src="./images/Group 104.png" alt="">
+            </div>
+         </div>
+         <div class="flex justify-between ml-16 mr-24 ">
+            <aside>
+               <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+            </aside>
+            <div class="flex gap-12 pb-24">
+               <p>Terms & Condition</p>
+               <p>Return & Refund Policy</p>
+               <p>Privacy policy</p>
+            </div>
+         </div>
+   
+      </footer>
+   </div>
+   
+   <div id="success-page" class="max-w-[1440px] h-[900px] bg-white mx-auto hidden pt-32">
+      <div  class="w-[710px] mx-auto bg-slate-200  rounded-3xl items-center">
+         <div class="text-center p-32 space-y-5">
+            <div class="flex justify-center items-center">
+               <img src="./images/success.png" alt="">
+            </div>
+            
+            <p class="text-3xl font-bold text-[#1DD100]">SUCCESS</p>
+            <h1>Thank you for Booking Our Bus Seats. 
+               We are working hard to find the best service and deals for you.</h1>
+               <p class="text-gray-500">Shortly you will find a comfirmation in your email.</p>
+               <button class="bg-[#1DD100]  text-white btn border-none rounded-xl w-full ">Continue</button>
+         </div>
       </div>
-   </section>
-   </main>
-   <footer class=" bg-[#030712] text-base-content rounded mt-32 pl-24 pr-24">
-      <div class="flex  border-b-2 border-dotted border-gray-400 justify-between m-16 pt-24 pb-6">
-         <div class="space-y-3">
-            <p class="text-3xl font-bold">E-Ticket</p>
-            <p>E-Ticket is a digital platform to make your <br> daily commuting better.</p>
-         </div>
-         <div class="space-y-5">
-            <h4 class="text-xl">Download our app</h4>
-            <img src="./images/Group 104.png" alt="">
-         </div>
-      </div>
-      <div class="flex justify-between ml-16 mr-24 ">
-         <aside>
-            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
-         </aside>
-         <div class="flex gap-12 pb-24">
-            <p>Terms & Condition</p>
-            <p>Return & Refund Policy</p>
-            <p>Privacy policy</p>
-         </div>
-      </div>
-
-    </footer>
+   </div>
    <script src="./smart-ticket.js"></script>
 </body>
 </html>
