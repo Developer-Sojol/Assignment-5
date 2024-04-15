@@ -15,14 +15,14 @@
    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body class="max-w-[1440px] bg-white mx-auto text-black ">
-   <header>
-      <nav class="p-4 ml-6 mr-12">
+   <header class="mx-auto max-w-[1172px]">
+      <nav class="p-4">
          <div class="navbar ">
             <div class="flex-1">
               <a class="btn btn-ghost text-4xl font-extrabold">E-Ticket</a>
             </div>
             <div class="flex-none">
-               <button class="btn text-[#1DD100] bg-[#1DD1001A] ">
+               <button class="btn text-[#1DD100] bg-[#1DD1001A] border-none">
                   Bus
                   <img src="./images/bus-icon.png" alt="">
                 </button>
@@ -93,7 +93,7 @@
                   </div>
                   <button class="btn text-[#1DD100] bg-[#1DD1001A] ml-52 border-none">
                      <img src="./images/seat-green.png" alt="">
-                     <span>40</span>Seat Left
+                     <span id="left-seat">40</span>Seat Left
                   </button>
                </div>
                <div class="bg-[#F7F8F8] w-[808px] h-[258px] rounded-2xl mt-8">
@@ -127,12 +127,12 @@
 
       <div class="flex gap-20">
 
-         <div class="w-8/12">
+         <div class="w-6/12 ">
             <div class="border-b-2 border-dotted border-gray-400 pb-4">
                <h2 class="text-3xl ">Select Your Seat</h2>
             </div>
 
-            <div class="border-b-2 border-dotted border-gray-400 flex justify-between">
+            <div class="border-b-2 border-dotted border-gray-400 flex justify-between ">
                <div class="flex pt-4 pb-4 gap-2">
                   <img src="./images/seat-gray.png" alt="">
                   <p>Avaliable</p>
@@ -142,8 +142,13 @@
                   <p>Selected</p>
                </div>
             </div>
+            <div class="m-6 flex justify-end  mr-20">
+               <p class="pl-6 pr-6 p-3 bg-[#dbdddd] rounded-xl"><img src="./images/tabler-icon-steering-wheel.png" alt=""></p>
+             
+            </div>
+
             <!-- Bus Seat Start -->
-            <div class="flex mt-6 gap-8 ">
+            <div class="flex mt-6 gap-8 pl-6">
                <div class="flex flex-col gap-9 mt-2  ">
                   <p>A</p>
                   <p>B</p>
@@ -157,54 +162,54 @@
                   <p>J</p>
                </div>
                <div class="space-y-3">
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">A1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">B1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">c1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">D1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">E1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">F1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">G1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">H1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">I1</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">J1</p>
+                  <p id="A1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A1</p>
+                  <p id="B1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B1</p>
+                  <p id="C1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C1</p>
+                  <p id="D1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D1</p>
+                  <p id="E1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E1</p>
+                  <p id="F1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F1</p>
+                  <p id="G1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G1</p>
+                  <p id="H1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H1</p>
+                  <p id="I1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I1</p>
+                  <p id="J1" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J1</p>
                </div>               
                <div class="space-y-3">
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">A2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">B2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">C2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">D2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">E2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">F2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">G2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">H2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">I2</p>
-                  <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">J2</p>
+                  <p id="A2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A2</p>
+                  <p id="B2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B2</p>
+                  <p id="C2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C2</p>
+                  <p id="D2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D2</p>
+                  <p id="E2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E2</p>
+                  <p id="F2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F2</p>
+                  <p id="G2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G2</p>
+                  <p id="H2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H2</p>
+                  <p id="I2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I2</p>
+                  <p id="J2" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J2</p>
                </div> 
 
                <div class="flex gap-10">
                   <div class="space-y-3 pl-14">
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">A1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">B1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">c1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">D1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">E1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">F1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">G1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">H1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">I1</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">J1</p>
+                     <p id="A3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A3</p>
+                     <p id="B3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B3</p>
+                     <p id="C3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C3</p>
+                     <p id="D3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D3</p>
+                     <p id="E3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E3</p>
+                     <p id="F3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F3</p>
+                     <p id="G3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G3</p>
+                     <p id="H3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H3</p>
+                     <p id="I3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I3</p>
+                     <p id="J3" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J3</p>
                   </div>               
                   <div class="space-y-3">
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">A2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">B2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">C2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">D2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">E2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">F2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">G2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">H2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">I2</p>
-                     <p class="p-3 pl-6 pr-6 bg-gray-400 rounded-xl">J2</p>
+                     <p id="A4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">A4</p>
+                     <p id="B4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">B4</p>
+                     <p id="C4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">C4</p>
+                     <p id="D4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">D4</p>
+                     <p id="E4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">E4</p>
+                     <p id="F4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">F4</p>
+                     <p id="G4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">G4</p>
+                     <p id="H4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">H4</p>
+                     <p id="I4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">I4</p>
+                     <p id="J4" class=" all-seat p-3 pl-6 pr-6 bg-[#F7F8F8] rounded-xl">J4</p>
                   </div> 
                </div>
             </div>
@@ -214,23 +219,23 @@
                <h2 class="text-3xl ">Select Your Seat</h2>
             </div>
             <div class="bg-[#F7F8F8] w-[433px]  mt-4 rounded-xl p-6">
-               <div class="flex justify-between border-b-2 border-dotted border-gray-400 pb-4">
-                  <p>Seat</p>
+               <div class=" grid grid-cols-3 border-b-2 border-dotted border-gray-400 p-4 pb-4">
+                  <p>Seat <span id="seat-count" class=" bg-[#1DD100] rounded-2xl pl-2 pr-2">0</span></p>
                   <p>Class</p>
                   <p>Price</p>
                </div>
-               <div class="border-b border-gray-400 pb-4">
+               <div id="selected-seat-details" class=" grid grid-cols-3 border-b border-gray-400 pb-4 p-5">
 
                </div>
                <div class="flex justify-between pt-2">
                   <h3>Total Price</h3>
-                  <p>BDT <span>0</span></p>
+                  <p>BDT <span id="total-price">0</span></p>
                </div>
                <input type="text" placeholder="Have any cuppon" class=" text-black bg-[#FFF] p-3 rounded-xl mt-2"/>
                <button class="bg-[#1DD100] text-white btn p-3 border-none rounded-xl">Apply</button>
                <div class="flex justify-between pt-3">
                   <h3>Grand Total</h3>
-                  <p>BDT <span>0</span></p>
+                  <p>BDT <span id="grand-total">0</span></p>
                </div>
             </div>
 
@@ -253,9 +258,29 @@
       </div>
    </section>
    </main>
-   <footer>
+   <footer class=" bg-[#030712] text-base-content rounded mt-32 pl-24 pr-24">
+      <div class="flex  border-b-2 border-dotted border-gray-400 justify-between m-16 pt-24 pb-6">
+         <div class="space-y-3">
+            <p class="text-3xl font-bold">E-Ticket</p>
+            <p>E-Ticket is a digital platform to make your <br> daily commuting better.</p>
+         </div>
+         <div class="space-y-5">
+            <h4 class="text-xl">Download our app</h4>
+            <img src="./images/Group 104.png" alt="">
+         </div>
+      </div>
+      <div class="flex justify-between ml-16 mr-24 ">
+         <aside>
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+         </aside>
+         <div class="flex gap-12 pb-24">
+            <p>Terms & Condition</p>
+            <p>Return & Refund Policy</p>
+            <p>Privacy policy</p>
+         </div>
+      </div>
 
-   </footer>
+    </footer>
    <script src="./smart-ticket.js"></script>
 </body>
 </html>
